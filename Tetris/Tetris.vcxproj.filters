@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="lib">
+      <UniqueIdentifier>{cbd67a59-aae2-49f5-8b5e-f1c4733ec809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\launchpad">
+      <UniqueIdentifier>{45af27a6-f3b4-413b-91b4-4d5ee8e91ff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\rtmidi">
+      <UniqueIdentifier>{bcead327-00e8-4c92-b392-28e1352854b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\midifile">
+      <UniqueIdentifier>{cce588b8-c336-48d5-a603-05877bc2fc86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\console">
+      <UniqueIdentifier>{ea4eccd2-c64e-4af9-8f60-e7ed4d5347a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lib\inputwatchdog">
+      <UniqueIdentifier>{c0440f2e-7d94-4226-b0d8-1052ed9dd5ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\launchpad\launchpad.h">
+      <Filter>lib\launchpad</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\Binasc.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\MidiEvent.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\MidiEventList.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\MidiFile.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\MidiMessage.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\midifile\Options.h">
+      <Filter>lib\midifile</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rtmidi\RtMidi.h">
+      <Filter>lib\rtmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rtmidi\rtmidi_c.h">
+      <Filter>lib\rtmidi</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\inputwatchdog\inputwatchdog.h">
+      <Filter>lib\inputwatchdog</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\console\gameui.h">
+      <Filter>lib\console</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\midifile\Binasc.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\midifile\MidiEvent.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\midifile\MidiEventList.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\midifile\MidiFile.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\midifile\MidiMessage.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\midifile\Options.cpp">
+      <Filter>lib\midifile</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rtmidi\RtMidi.cpp">
+      <Filter>lib\rtmidi</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rtmidi\rtmidi_c.cpp">
+      <Filter>lib\rtmidi</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\launchpad\launchpad.cpp">
+      <Filter>lib\launchpad</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\inputwatchdog\inputwatchdog.cpp">
+      <Filter>lib\inputwatchdog</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\console\gameui.cpp">
+      <Filter>lib\console</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
