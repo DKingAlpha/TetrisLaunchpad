@@ -5,11 +5,6 @@
 int main()
 {
     GameUI* game = new GameUI();
-    //while (true)
-    //{
-        Sleep(2000);
-    //}
-    //game->startGame();
 
     while (true)
     {

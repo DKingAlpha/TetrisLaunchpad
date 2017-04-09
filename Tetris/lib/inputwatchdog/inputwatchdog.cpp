@@ -4,11 +4,11 @@
 void InputWatchDog::proc_console()
 {
     INPUT_RECORD irInBuf[128];
-    while (true)
+    DWORD cNumRead;
+    while (jobstarted)
     {
         if (gameui->cast2console)
         {
-            DWORD cNumRead;
             if (ReadConsoleInput(hConsoleIn, irInBuf, 128, &cNumRead))
             {
                 for (int i = 0; i < cNumRead; i++)
@@ -41,7 +41,7 @@ void InputWatchDog::proc_console()
 
 void InputWatchDog::proc_launchpad()
 {
-    while (true)
+    while (jobstarted)
     {
         if (gameui->cast2launchpad)
         {

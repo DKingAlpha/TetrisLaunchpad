@@ -285,7 +285,7 @@ void GameUI::prepareDebug()
 void GameUI::buttonMapper(int x, int y)
 {
     if (((x >= scene_offset.X) || (x < scene_offset.X + 4)) && (y == scene_offset.Y + height + 1))startGame();
-    if (((x >= scene_offset.X + 2 * width - 4) || (x < scene_offset.X + 2 * width)) && (y == scene_offset.Y + height + 1)) stopGame();
+    if (((x >= scene_offset.X + 2 * width - 4) && (x < scene_offset.X + 2 * width)) && (y == scene_offset.Y + height + 1)) stopGame();
     if (((x == layout_offset.X + 5) || (x == layout_offset.X + 6)) && y == 6) decWidth();
     if (((x == layout_offset.X + 11) || (x == layout_offset.X + 12)) && y == 6) incWidth();
     if (((x == layout_offset.X + 5) || (x == layout_offset.X + 6)) && y == 7) decHeight();
@@ -435,7 +435,6 @@ void GameUI::cast2Device()
 
 }
 
-
 void GameUI::incWidth()
 {
     stopGame();
@@ -519,8 +518,10 @@ void GameUI::startGame()
     if (!gamerunning)
     {
         if (lpd->isConnected() && width == 8 && height == 8) 
+        {
             cast2launchpad = true;
-        lpd->playMidiFile_speed("midires/start.mid",8);
+            lpd->playMidiFile_speed("midires/start.mid", 8);
+        }
         tetris = new Tetris(this);
         inputWD->reloadHandle();
         gamerunning = true;
